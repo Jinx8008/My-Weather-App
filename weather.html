@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="weather.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+  <section>
+    <div class="container">
+        <!-- <h1>Weather Forecast</h1> -->
+        <div id="search-container">
+            <form action="" id="weather-form">
+                <input type="text" placeholder="Enter Your Location" id="input-city">
+                <button type="submit"><img src="/weather-img/icons8-search-26.png" alt=""></button>
+            </form>
+            
+        </div>
+
+        <div id="weather-result-container">
+            <div class="weather-result-content">
+
+                <div class="weather-info-1">
+                <div class="location">
+                    <div class="country"></div>
+                    <div class="city"></div>
+
+                <img id="weather-icon" src="" alt="" />
+                <div class="temperature"></div>
+                <div class="weather"></div>
+
+            </div>
+
+        </div>
+        <div class="weather-info-2">
+
+                <div class="humidity-container">
+                    <div class="humidity-icon">
+                        <img src="" alt="" id="humidity-icon" class="icons">
+                    </div>
+                    <div class="humidity">
+                        <div class="humidity-value"></div>
+                        <div class="humidity-text"></div>
+                    </div>
+                </div>
+                <div class="wind-speed-container">
+                    <div class="wind-icon">
+                        <img src="" alt="" id="wind-icon" class="icons">
+                    </div>
+                    <div class="wind-speed">
+                        <div class="wind-speed-value"></div>
+                        <div class="wind-speed-text"></div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            
+    </div>
+  </section>
+</body>
+<script src="weather.js"></script>
+</html> 

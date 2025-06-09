@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    /* border: 2px solid purple; */
+    background-color: rgba(0, 0, 253, 0.558);
+    background-image: url('weather-img/wallhaven-pk5e6p_1920x1080.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+section{
+       height: 100vh;
+       /* border: 1px solid white; */
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+.container{
+ border: 0.15vw solid rgba(255, 255, 255, 0.315) ;
+ border-radius: 2vw;
+ padding: 1.5vw;
+ backdrop-filter: blur(8px);
+}
+h1{
+    font-size: 4vw;
+    font-family: "Roboto Condensed", sans-serif;
+}
+#weather-form{
+    display: flex;
+}
+#search-container{
+    display: flex;
+    border: 0.15vw solid rgba(255, 255, 255, 0.315) ;
+    border-radius: 5vw;
+    align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+#search-container img{
+    height: 2.3vw;
+    /* border: 1px solid white; */
+}
+#search-container input{
+    display: flex;
+    margin: 0.5vw auto;
+}
+#search-container input[type="text"]{
+    width: 23vw;
+    height: 3.2vw;
+    background-color: transparent;
+    border: none;
+    padding: 0 1.5vw;
+    font-size: 1.2vw;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    outline: none;
+    /* border: 1px solid white; */
+}
+#search-container input[type="text"]:focus {
+  background-color: transparent;
+  color: white;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+}
+#search-container button{
+    border-radius: 2vw;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border: 1px solid white; */
+}
+
+#weather-result-container{
+    /* border: 1px solid white; */
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+}
+.weather-result-content{
+    /* border: 1px solid purple; */
+    width: 23vw;
+}
+.weather-info-1{
+    /* border: 1px solid green; */
+    text-align: center;
+}
+.weather-info-2{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+}
+.temperature{
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.weather{
+    font-size: 3.5vw;
+    font-weight: 370;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.city{
+    font-size: 2vw;
+    font-weight: 370;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.country{
+    font-size: 1.5vw;
+    font-weight: 370;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.humidity-container{
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+    font-size: 1.2vw;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.wind-speed-container{
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+    font-size: 1.2vw;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.weather-info-2 img{
+    height: 2.9vw;
+}
+.weather-info-1 img{
+    height: 7vw;
+}
