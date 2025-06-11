@@ -76,8 +76,12 @@ document.getElementById("weather-form").addEventListener("submit", function (e) 
         
         .catch(error => {
             console.error("Error fetching weather data:", error);
+            alert("Could not retrieve weather data. Please check the city name or try again later.");   
             alert("Could not retrieve weather. Check your coordinates or try again later.");
         });
+
+
+
 
 
 });
